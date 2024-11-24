@@ -9,3 +9,5 @@ Added from 28/11/2023
 - change skymap brightness
 - add positional audio 
 - change tween of ghost's speed to be constant
+
+Create python web server using python -m http.server
