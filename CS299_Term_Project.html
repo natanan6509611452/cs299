@@ -86,7 +86,7 @@
   {
     const loader = new THREE.TextureLoader();
     const texture = loader.load(
-      'https://natanan6509611452.github.io/cs299/VizPeople_non_commercial_hdr_v1_10-1920x928.jpg',
+      'VizPeople_non_commercial_hdr_v1_10-1920x928.jpg',
       () => {
         const rt = new THREE.WebGLCubeRenderTarget(texture.image.height);
         rt.fromEquirectangularTexture(renderer, texture);
@@ -198,7 +198,7 @@
 
   //load 'Haunted Room' gltf to the scene
   const gltfLoader = new GLTFLoader();
-  gltfLoader.load('https://natanan6509611452.github.io/cs299/Haunted_Room.glb', (glb) => {
+  gltfLoader.load('Haunted_Room.glb', (glb) => {
     const root = glb.scene;
     scene.add(root);
     door = root.getObjectByName("door");
